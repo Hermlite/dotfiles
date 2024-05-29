@@ -3,83 +3,20 @@
   "editor.fontLigatures": false,
   "editor.fontSize": 15,
   "editor.fontWeight": "400",
+  "extensions.autoUpdate": false,
   "editor.smoothScrolling": true,
-  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.sideBar.location": "right",
   "editor.parameterHints.enabled": false,
   "editor.bracketPairColorization.enabled": false,
-  "editor.inlineSuggest.enabled": true,
-  "editor.inlayHints.enabled": "offUnlessPressed",
-  "editor.minimap.enabled": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "never",
-    "source.organizeImports": "never"
-  },
-  "workbench.sideBar.location": "right",
-  "workbench.list.smoothScrolling": true,
-  "workbench.colorTheme": "Catppuccin Macchiato",
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.tree.expandMode": "singleClick",
-  "workbench.tree.indent": 10,
-  "window.dialogStyle": "custom",
-  "window.nativeTabs": true, // this is great, macOS only
-  "window.title": "${rootName}", // this make tabs more readable
-  "window.titleBarStyle": "custom",
-  "extensions.autoUpdate": "onlyEnabledExtensions",
-  "explorer.confirmDelete": false,
-  "explorer.compactFolders": false,
-  "githubPullRequests.pullBranch": "never",
-  "files.eol": "\n",
-  "files.insertFinalNewline": true,
-  "files.simpleDialog.enable": true,
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "git.enableSmartCommit": true,
-  "git.untrackedChanges": "separate",
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.menus": {
-    "editor": {
-      "blame": false,
-      "clipboard": true,
-      "compare": true,
-      "history": false,
-      "remote": false
-    },
-    "editorGroup": {
-      "blame": true,
-      "compare": false
-    },
-    "editorTab": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": true
-    },
-    "explorer": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": true
-    },
-    "scm": {
-      "authors": true
-    },
-    "scmGroup": {
-      "compare": true,
-      "openClose": true,
-      "stash": true
-    },
-    "scmGroupInline": {
-      "stash": true
-    },
-    "scmItem": {
-      "clipboard": true,
-      "compare": true,
-      "history": true,
-      "remote": false,
-      "stash": true
-    }
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#ffffff",
+    "editorBracketHighlight.foreground2": "#b4dbdc",
+    "editorBracketHighlight.foreground3": "#95a1d3",
+    "editorBracketHighlight.foreground4": "#7fc6a1",
+    "editorBracketHighlight.foreground5": "#cdb480",
+    "editorBracketHighlight.foreground6": "#e38d8d",
+    "editorInlayHint.background": "#172130",
+    "editorInlayHint.foreground": "#a8bad5"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -93,41 +30,54 @@
     "editor.formatOnSave": true
   },
   "[python]": {
-    "editor.tabSize": 4,
     "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
-    },
+    "editor.formatOnType": true
   },
+  "explorer.confirmDelete": false,
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
   "python.languageServer": "Pylance",
   "python.testing.autoTestDiscoverOnSaveEnabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.inlayHints.enabled": "offUnlessPressed",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
-  },
-  "[dart]": {
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.rulers": [80],
-    "editor.selectionHighlight": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.suggestSelection": "first",
-    "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": "off"
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
+  "rust-analyzer.inlayHints.lifetimeElisionHints.useParameterNames": true,
+  "rust-analyzer.imports.granularity.group": "module",
+  "rust-analyzer.imports.prefix": "crate",
+  "rust-analyzer.inlayHints.chainingHints.enable": true,
+  "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "always",
+  "rust-analyzer.inlayHints.reborrowHints.enable": "always",
+  "rust-analyzer.inlayHints.typeHints.enable": true,
+  "editor.minimap.enabled": false,
+  "rust-analyzer.completion.snippets.custom": {
+    "IfLetSome": {
+      "description": "Postfix snippet to generate a If let Some(?)",
+      "postfix": "ifsome",
+      "scope": "expr",
+      "body": ["if let Some(val) = ${receiver} {", "\t${0}", "}"]
+    },
+    "IfLetOk": {
+      "description": "Postfix snippet to generate a If let Ok(?)",
+      "postfix": "ifok",
+      "scope": "expr",
+      "body": ["if let Ok(val) = ${receiver} {", "\t${0}", "}"]
+    }
+  },
+  "git.autofetch": true,
+  "editor.codeActionsOnSave": {},
+  "workbench.colorTheme": "Night Owl (No Italics)",
+  "githubPullRequests.pullBranch": "never",
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "extensions.ignoreRecommendations": true,
   "[vue]": {
