@@ -16,7 +16,7 @@
   },
   "workbench.sideBar.location": "right",
   "workbench.list.smoothScrolling": true,
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.colorTheme": "Catppuccin Macchiato",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
@@ -26,6 +26,7 @@
   "window.titleBarStyle": "custom",
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
   "githubPullRequests.pullBranch": "never",
   "files.eol": "\n",
   "files.insertFinalNewline": true,
@@ -92,6 +93,7 @@
     "editor.formatOnSave": true
   },
   "[python]": {
+    "editor.tabSize": 4,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.defaultFormatter": "charliermarsh.ruff",
@@ -125,7 +127,13 @@
     "editor.tabSize": 2
   },
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "vscode.html-language-features",
   },
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "explorer.confirmDragAndDrop": false
 }
