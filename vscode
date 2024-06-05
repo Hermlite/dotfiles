@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "MonoLisa",
   "editor.fontLigatures": false,
   "editor.fontSize": 15,
   "editor.fontWeight": "400",
@@ -85,5 +85,6 @@
     "editor.tabSize": 2,
     "editor.formatOnSave": true
   },
-  "explorer.confirmDragAndDrop": false
+  "explorer.confirmDragAndDrop": false,
+  "workbench.startupEditor": "none"
 }
